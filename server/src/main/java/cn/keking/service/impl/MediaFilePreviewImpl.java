@@ -132,7 +132,7 @@ public class MediaFilePreviewImpl implements FilePreview {
             File desFile=new File(fileName);
             //判断一下防止穿透缓存
             if(desFile.exists()){
-                return fileName;
+                return convertFileName;
             }
 
             frameGrabber.start();
